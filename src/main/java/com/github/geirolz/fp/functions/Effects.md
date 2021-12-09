@@ -79,6 +79,24 @@ You can retrieve the wrapped value in an unsafe way with `.get()`
 ---
 #List/Stream
 
+###List 
+A container of multiple values or empty with the purpose of efficient access to values
 
+###Stream
+A lazy and immutable container of multiple values or empty with the purpose of computational operations
+
+---
+# Stream
+### Initialization
+To initiate a stream we use `.stream()` on a collection
+
+### map() and filter()
+We can transform each element of the Stream with function .map() providing the mapper function `A -> B` 
+
+```java
+    List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+    Stream<Integer> stream = list.stream();
+    Stream<Integer> modifiedStream = stream.map(x -> x * 2);
+```
 ---
 #Exercises stream

@@ -6,9 +6,11 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Optional;
+import java.util.List;
+import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CustomerTest {
     @Test
@@ -33,14 +35,10 @@ class CustomerTest {
     }
 
     @Test
-    public void test(){
-        Optional<Integer> some = Optional.ofNullable(5);
-        Optional<String> someString = some.map(v -> v.toString());
-        assertTrue(someString.isPresent());
-        assertEquals(someString.get(), "5");
-
-        Optional<String> none = Optional.ofNullable(null);
-        assertFalse(none.isPresent());
+    public void test() {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        Stream<Integer> stream = list.stream();
+        Stream<Integer> modifiedStream = stream.map(x -> x * 2);
     }
 
 }
