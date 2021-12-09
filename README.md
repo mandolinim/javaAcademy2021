@@ -82,6 +82,7 @@ More and more neatly...
 * **Referential transparency: a program has the same effects and output on the same input;**
 * Functions as a first-class object;
 * Higher order functions;
+* Effects
 * Lazy evaluation;
 * Static polymorphic typing;
 * User-defined data types;

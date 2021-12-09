@@ -39,3 +39,31 @@ From Java 8 on we can use **lamba expressions** to obtain a more readable and co
     Function<Integer, String> intToStr = intValue -> intValue.toString();
 ```
 
+---
+## Functions as a first-class object
+
+We can use function as value/parameter to other functions
+
+#### Example on sorting list
+We can define the function to compare two elements and pass it as strategy to the sort function
+
+#### Example
+
+```java
+    class Order{
+        BigDecimal value;
+        String customerName;
+    }
+```
+
+```java
+    public void sortByValue(List<Order> orders) {
+       orders.sort((o1, o2) -> o1.value.compareTo(o2.value));
+    }
+```
+
+```java
+    public void sortByName(List<Order> orders) {
+        orders.sort((o1, o2) -> o1.customerName.compareTo(o2.customerName));
+    }
+```

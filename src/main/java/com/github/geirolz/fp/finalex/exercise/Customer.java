@@ -1,7 +1,8 @@
 package com.github.geirolz.fp.finalex.exercise;
 
-import java.util.List;
-import java.util.Optional;
+import java.math.BigDecimal;
+import java.util.*;
+import java.util.function.BiFunction;
 
 public class Customer {
     private final List<Order> orders;

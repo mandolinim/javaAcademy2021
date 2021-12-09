@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -29,6 +30,17 @@ class CustomerTest {
         ));
 
         assertTrue(customer.findOrderById("order2").isPresent());
+    }
+
+    @Test
+    public void test(){
+        Optional<Integer> some = Optional.ofNullable(5);
+        Optional<String> someString = some.map(v -> v.toString());
+        assertTrue(someString.isPresent());
+        assertEquals(someString.get(), "5");
+
+        Optional<String> none = Optional.ofNullable(null);
+        assertFalse(none.isPresent());
     }
 
 }
