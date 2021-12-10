@@ -80,7 +80,11 @@ Or get a default value with `.orElse(...)`
 ```
 
 ---
-#Exercises optional
+##Try it yourself!
+Take a look at tests called `DiscountTest` and `OrderHistoryTest`
+
+Launch the test and fix the code :)   
+Refactor the affected classes using the functional concepts and methods previously described 
 
 ---
 #List/Stream
