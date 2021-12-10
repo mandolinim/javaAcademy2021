@@ -1,4 +1,4 @@
-package com.github.geirolz.fp.functions.exercise;
+package com.ynap.fp.functions.exercise;
 
 import java.util.List;
 

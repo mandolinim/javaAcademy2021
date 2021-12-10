@@ -1,4 +1,4 @@
-package com.github.geirolz.fp.finalex.exercise;
+package com.ynap.fp.finalex.exercise;
 
 import java.math.BigDecimal;
 import java.util.Optional;

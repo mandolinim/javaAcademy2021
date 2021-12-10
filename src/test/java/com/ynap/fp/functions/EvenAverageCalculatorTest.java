@@ -1,6 +1,7 @@
-package com.github.geirolz.fp.functions;
+package com.ynap.fp.functions;
 
-import com.github.geirolz.fp.functions.exercise.EvenAverageCalculator;
+import com.ynap.fp.functions.exercise.EvenAverageCalculator;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -27,6 +28,6 @@ class EvenAverageCalculatorTest {
         List<Integer> ls = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         //Assert that result is equals to 6
-        assertEquals(6.0, EvenAverageCalculator.compute(ls));
+        Assertions.assertEquals(6.0, EvenAverageCalculator.compute(ls));
     }
 }

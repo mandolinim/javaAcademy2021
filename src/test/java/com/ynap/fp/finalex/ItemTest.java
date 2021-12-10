@@ -1,6 +1,6 @@
-package com.github.geirolz.fp.finalex;
+package com.ynap.fp.finalex;
 
-import com.github.geirolz.fp.finalex.exercise.Item;
+import com.ynap.fp.finalex.exercise.Item;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

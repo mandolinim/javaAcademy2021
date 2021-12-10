@@ -44,7 +44,7 @@ Let's implements `andThen` in Java.
 ---
 ## Exercise
 
-Take a look at package `com.github.geirolz.fp.functions.exercise`.
+Take a look at package `com.github.geirolz.fp.functions.exercise`. //todo change package/file 
 
 We have a class named `EvenAverageCalculator` and the relative test class.
 

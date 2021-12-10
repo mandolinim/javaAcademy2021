@@ -26,10 +26,10 @@ CompletableFuture represents a result of an asynchronous computation that may or
 Handle the presence or absence of multiple values
 
 ---
-#Optional
+##Optional
 A "box" containing a value that can be present or not.
 
-`.isPresent` return true if the optional wrap a value, false if wrap `null` value
+`.isPresent` return true if the optional wrap a value, false if it wraps `null`
 ```java
     Optional<String> some = Optional.ofNullable("Some value");
     assertTrue(some.isPresent()); 
@@ -45,6 +45,12 @@ You can retrieve the wrapped value in an unsafe way with `.get()`
     
     Optional<String> none = Optional.ofNullable(null);
     none.get() //will throw exception (NoSuchElementException)
+```
+Or get a default value with `.orElse(...)`
+```java 
+    Optional<String> none = Optional.ofNullable(null);
+    
+    assertEquals(none.orElse("foo"), "foo"); 
 ```
 ---
 ## Map and filter
@@ -86,17 +92,28 @@ A container of multiple values or empty with the purpose of efficient access to 
 A lazy and immutable container of multiple values or empty with the purpose of computational operations
 
 ---
-# Stream
+## Stream
 ### Initialization
 To initiate a stream we use `.stream()` on a collection
-
-### map() and filter()
-We can transform each element of the Stream with function .map() providing the mapper function `A -> B` 
-
 ```java
     List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
     Stream<Integer> stream = list.stream();
+```
+
+### map() and filter()
+We can transform each element of the Stream with function `.map()` providing the mapper function `A -> B` 
+
+```java
+    // multiply all elements by two
     Stream<Integer> modifiedStream = stream.map(x -> x * 2);
+```
+We can filter out some elements given a function that return a boolean `(A -> bool)`.
+```java
+    // filter out odd values
+    Stream<Integer> filteredStream = stream.filter(x -> x % 2 == 0); 
 ```
 ---
 #Exercises stream
+```java
+
+```
