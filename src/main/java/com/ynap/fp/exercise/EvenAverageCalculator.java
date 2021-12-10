@@ -1,4 +1,4 @@
-package com.ynap.fp.functions.exercise;
+package com.ynap.fp.exercise;
 
 import java.util.List;
 

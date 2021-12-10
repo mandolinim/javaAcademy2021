@@ -1,6 +1,6 @@
-package com.ynap.fp.functions;
+package com.ynap.fp.slides;
 
-import com.ynap.fp.functions.exercise.EvenAverageCalculator;
+import com.ynap.fp.exercise.EvenAverageCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

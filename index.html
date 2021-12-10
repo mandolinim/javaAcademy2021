@@ -13,12 +13,12 @@
         let srcPath = "src/main/java/com/ynap/fp";
         $.when(loads([
             "README.md",
-            srcPath + "/immutability/Immutability.md",
-            srcPath + "/functions/Functions.md",
-            srcPath + "/functions/Effects.md",
-            srcPath + "/functions/FunctionsComposability.md",
-            srcPath + "/functions/ReferentialTransparency.md",
-            srcPath + "/functions/PureFunctions.md",
+            srcPath + "/slides/Immutability.md",
+            srcPath + "/slides/Functions.md",
+            srcPath + "/slides/Effects.md",
+            srcPath + "/slides/FunctionsComposability.md",
+            srcPath + "/slides/ReferentialTransparency.md",
+            srcPath + "/slides/PureFunctions.md",
             "outro.md"
         ])).then(function(data){
             $("#source").html(data).show();
