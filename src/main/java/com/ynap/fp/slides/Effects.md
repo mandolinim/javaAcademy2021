@@ -81,9 +81,10 @@ Or get a default value with `.orElse(...)`
 
 ---
 ##Try it yourself!
-Take a look at tests called `DiscountTest` and `OrderHistoryTest`
+Take a look at tests called `DiscountTest` and `ItemTest`
 
 Launch the test and fix the code :)   
+
 Refactor the affected classes using the functional concepts and methods previously described 
 
 ---
@@ -117,7 +118,35 @@ We can filter out some elements given a function that return a boolean `(A -> bo
     Stream<Integer> filteredStream = stream.filter(x -> x % 2 == 0); 
 ```
 ---
-#Exercises stream
-```java
+#Terminal operations
+Being `Stream` a lazy construct no operation is performed until a "Terminal operation" is invoked.
+Some example are:
 
+Materialize the stream in a single value
+
+* `.average()`
+* `.count()`
+* `.reduce(T identity, (T acc, T cur) -> T);`
+
+```java
+    List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+    int result = numbers
+        .stream()
+        .reduce(0, (subtotal, current) -> subtotal + current);
+
+    assertEquals(result, 21);
 ```
+
+Materialize the stream in a specified collection (List, Set, Map ...)
+* `.collect(...)` 
+
+
+---
+##Try it yourself!
+Take a look at tests called `DiscountTest` and `ItemTest`
+
+Launch the test and fix the code :)
+
+Refactor the affected classes using the functional concepts and methods previously described 
+

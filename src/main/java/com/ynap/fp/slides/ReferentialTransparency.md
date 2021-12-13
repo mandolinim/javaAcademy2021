@@ -70,3 +70,8 @@ int add(int a, int b) {
 ```
 
 Replacing a call to the add method with the corresponding return value will change the result of the program, since the message will no longer be printed.
+
+```java
+int x = add(2, 12) // x = 14 and print: Returning 14
+int x = 14         // x = 14 and nothing printed
+```

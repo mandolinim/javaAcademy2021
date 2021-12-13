@@ -52,6 +52,6 @@ We have a class named `EvenAverageCalculator` and the relative test class.
 * Refactor the `compute()` method in order to compute that value with a 2 functions combination.
 
 Hints:
-* Use `stream()`, `filter()`, `mapToDouble()`, `collect()` and `average()`.
+* Use `stream()`, `filter()`, `mapToDouble()` and `average()`.
 * https://www.mkyong.com/java8/java-8-streams-filter-examples/
 * https://www.geeksforgeeks.org/stream-maptodouble-java-examples/
