@@ -41,17 +41,3 @@ Let's implements `andThen` in Java.
     //Logical flow reversed, the input is the output of previusly call.
     toEuro(intToStr(10))//"10€" 
 ```
----
-## Exercise
-
-Take a look at package `com.github.geirolz.fp.functions.exercise`. //todo change package/file 
-
-We have a class named `EvenAverageCalculator` and the relative test class.
-
-* Launch the test and fix the code, if necessary;
-* Refactor the `compute()` method in order to compute that value with a 2 functions combination.
-
-Hints:
-* Use `stream()`, `filter()`, `mapToDouble()` and `average()`.
-* https://www.mkyong.com/java8/java-8-streams-filter-examples/
-* https://www.geeksforgeeks.org/stream-maptodouble-java-examples/
