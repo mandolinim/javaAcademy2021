@@ -81,11 +81,9 @@ Or get a default value with `.orElse(...)`
 
 ---
 ##Try it yourself!
-Take a look at tests called `DiscountTest` and `ItemTest`
+Take a look at tests called `OptionalExerciseTest`
 
-Launch the test and fix the code :)   
-
-Refactor the affected classes using the functional concepts and methods previously described 
+Launch the test and implement the code using the functional concepts and methods previously described.
 
 ---
 #List/Stream
@@ -144,9 +142,7 @@ Materialize the stream in a specified collection (List, Set, Map ...)
 
 ---
 ##Try it yourself!
-Take a look at tests called `DiscountTest` and `ItemTest`
+Take a look at tests called `StreamExerciseTest` 
 
-Launch the test and fix the code :)
-
-Refactor the affected classes using the functional concepts and methods previously described 
+Launch the test and implement the code using the functional concepts and methods previously described.
 
