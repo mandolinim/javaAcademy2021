@@ -5,12 +5,17 @@ import java.util.Optional;
 
 public class Item {
     private final BigDecimal unitPrice;
+    private final Optional<BigDecimal> discount;
 
-    public Item(BigDecimal unitPrice) {
+    public Item(BigDecimal unitPrice, Optional<BigDecimal> discount) {
         this.unitPrice = unitPrice;
+        this.discount = discount;
     }
 
-    public BigDecimal getUnitPrice() {
+    public BigDecimal totalItem() {
+        if (discount.isPresent())
+            return unitPrice.subtract(discount.get());
+
         return unitPrice;
     }
 }

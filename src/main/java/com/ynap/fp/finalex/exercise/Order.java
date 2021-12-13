@@ -16,19 +16,14 @@ public class Order {
         return id;
     }
 
-    public List<Item> getItems() {
-        return items;
-    }
-
-    public BigDecimal totalOrder(BigDecimal discount) {
+    public BigDecimal totalOrder() {
         BigDecimal total = BigDecimal.ZERO;
 
-        for (Item item : items) {
-            final BigDecimal totalItem = item.getUnitPrice().subtract(discount);
+        for (int i = 1; i < items.size(); i++) {
+            final BigDecimal totalItem = items.get(i).totalItem();
             total = total.add(totalItem);
         }
 
         return total;
     }
-
 }

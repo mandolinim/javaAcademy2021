@@ -1,28 +1,20 @@
 package com.ynap.fp.finalex.exercise;
 
-import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 public class Customer {
     private final List<Order> orders;
-    private BigDecimal discount;
 
     public Customer(List<Order> orders) {
         this.orders = orders;
     }
 
-    public void setDiscount(BigDecimal discount) {
-        this.discount = discount;
-    }
+    public Optional<Order> findOrderById(String orderId) {
+        for(int i=0; i<=orders.size(); i++)
+            if(orderId.equals(orders.get(i).getId()))
+                return Optional.of(orders.get(i));
 
-    public BigDecimal getDiscount() {
-        return discount;
-    }
-
-    public Order findOrderById(String orderId) {
-        for (Order order : orders)
-            if (orderId.equals(order.getId()))
-                return order;
-        return null;
+        return Optional.empty();
     }
 }
