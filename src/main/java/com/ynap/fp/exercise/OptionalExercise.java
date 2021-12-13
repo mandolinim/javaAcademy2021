@@ -1,26 +1,10 @@
 package com.ynap.fp.exercise;
 
+import com.ynap.fp.exercise.model.Person;
+
 import java.util.Optional;
 
 public class OptionalExercise {
-
-    public static class Person {
-        private final String name;
-        private final Integer age;
-
-        public Person(String name, Integer age) {
-            this.name = name;
-            this.age = age;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public Integer getAge() {
-            return age;
-        }
-    }
 
     public static String toUppercaseName(Optional<Person> person) {
 

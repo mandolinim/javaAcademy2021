@@ -1,10 +1,10 @@
 package com.ynap.fp.exercise;
 
+import com.ynap.fp.exercise.model.Person;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 
-import static com.ynap.fp.exercise.OptionalExercise.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class OptionalExerciseTest {
